@@ -2,7 +2,7 @@
 
 ## Topics covered:
  
-- ## Module 01 - Introduction to DevOps 
+- Module 01 - Introduction to DevOps 
 - DevOps Bootcamp Overview
 - What is DevOps?
 - Roles and Responsibilities of a DevOps Engineer
@@ -21,11 +21,11 @@
 - Environment Variables
 - Networking
 - SSH - Secure Shell
-- 
+
 ## Module 03 - Version Control with Git 
  
 - Introduction to Version Control and Git
-- Full Git Tutorial:
+#### Full Git Tutorial:
 - Basic Concepts of Git
 - Setup git repository (remote and local)
 - Working with Git (git status, git commit, git add, git push)
@@ -41,8 +41,7 @@
 - Undoing commits (git revert, git reset)
 - Merging Branches
 - Git for DevOps
-
-- Database Types
+#### Database Types
 
 ##  Build and Package Manager Tools
 
@@ -54,7 +53,6 @@
 - Dependency Management in Software Development
 - Package Manager in JavaScript applications - Build and run applications in JS
 - Build Tools & Docker
-
 - Why Build Tools are relevant for DevOps Engineers?
 
 ```
@@ -74,9 +72,7 @@ https://github.com/bbachi/react-nodejs-example
 https://github.com/pmendelski/java-react-example
 
 - Cloud & Infrastructure as a Service Concepts
-
-- Working with a cloud server:
-
+#### Working with a cloud server:
 - Setup Server on DigitalOcean (Droplet)
 - Install Java on Cloud Server
 - Deploy and run an application on Cloud Server
@@ -99,7 +95,7 @@ https://gitlab.com/nanuchi/java-maven-app
 - Cleanup Policies
 - Scheduled Tasks
 
-##### Nexus manual installation
+#### Nexus manual installation
 
 ```
 apt update
@@ -140,16 +136,15 @@ https://gitlab.com/nanuchi/developing-with-docker
 HadoLinter for Docker -
 https://github.com/hadolint/hadolint
 
-#### Best practises
-- Best practices for writing Dockerfiles: 
-https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+#### Docker best practises
 - Docker development best practices: 
 https://docs.docker.com/develop/dev-best-practices/
-- Tips for Caching, reducing Image size, maintainability, reproducibility: 
+- Best practices for writing Dockerfiles: 
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+- Tips for caching, reducing image size, maintainability, reproducibility: 
 https://www.docker.com/blog/intro-guide-to-dockerfile-best-practices/
 
-- Docker & Nexus
-
+#### Docker & Nexus
 - Create Docker Images Repository on Nexus
 - Push/Pull Docker Image from/to Nexus Repository Manager
 - Install Nexus with Docker
@@ -157,7 +152,7 @@ https://www.docker.com/blog/intro-guide-to-dockerfile-best-practices/
 
 ##  Build Automation - CI/CD with Jenkins 
 
-- Jenkins in a Docker container:
+#### Jenkins in a Docker container:
 
 `docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts `
 
