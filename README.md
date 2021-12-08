@@ -26,75 +26,78 @@
  
 - Introduction to Version Control and Git
 - Full Git Tutorial:
--     Basic Concepts of Git
--     Setup git repository (remote and local)
--     Working with Git (git status, git commit, git add, git push)
--     Initialize Git project locally
--     Concept of Branches
--     Merge Requests
--     Deleting Branches
--     Avoiding Merge Commits (rebase)
--     Resolving Merge Conflicts
--     Don't track certain files (.gitignore)
--     Save work-in-progress changes (git stash)
--     Going back in history (git checkout)
--     Undoing commits (git revert, git reset)
--     Merging Branches
--     Git for DevOps
+- Basic Concepts of Git
+- Setup git repository (remote and local)
+- Working with Git (git status, git commit, git add, git push)
+- Initialize Git project locally
+- Concept of Branches
+- Merge Requests
+- Deleting Branches
+- Avoiding Merge Commits (rebase)
+- Resolving Merge Conflicts
+- Don't track certain files (.gitignore)
+- Save work-in-progress changes (git stash)
+- Going back in history (git checkout)
+- Undoing commits (git revert, git reset)
+- Merging Branches
+- Git for DevOps
 
 - Database Types
 
 ##  Build and Package Manager Tools
 
--     What are Build Tools and Package Managers?
--     How to build an artifact?
--     How to run the application artifact?
--     How to publish the application artifact to artifact repository?
--     Build Tools for Java (gradle and maven examples)
--     Dependency Management in Software Development
--     Package Manager in JavaScript applications - Build and run applications in JS
--     Build Tools & Docker
+- What are Build Tools and Package Managers?
+- How to build an artifact?
+- How to run the application artifact?
+- How to publish the application artifact to artifact repository?
+- Build Tools for Java (gradle and maven examples)
+- Dependency Management in Software Development
+- Package Manager in JavaScript applications - Build and run applications in JS
+- Build Tools & Docker
 
--    Why Build Tools are relevant for DevOps Engineers?
+- Why Build Tools are relevant for DevOps Engineers?
 
-● Java: maven | gradle
-● JavaScript: npm | yarn | webpack
-● Python: pip 
-● C/C++: conan
-● C#: NuGet
-● Golang: dep
-● Ruby: RubyGems
-
+```
+Java: maven | gradle
+JavaScript: npm | yarn | webpack
+Python: pip 
+C/C++: conan
+C#: NuGet
+Golang: dep
+Ruby: RubyGems
+```
 
 ##  Cloud & Infrastructure as a Service Basics (Digital Ocean)
 
 https://github.com/bbachi/react-nodejs-example
+
 https://github.com/pmendelski/java-react-example
 
--    Cloud & Infrastructure as a Service Concepts
+- Cloud & Infrastructure as a Service Concepts
 
 - Working with a cloud server:
 
--    Setup Server on DigitalOcean (Droplet)
--    Install Java on Cloud Server
--    Deploy and run an application on Cloud Server
--    Create a Linux User to login to Server (instead of using Root User)
+- Setup Server on DigitalOcean (Droplet)
+- Install Java on Cloud Server
+- Deploy and run an application on Cloud Server
+- Create a Linux User to login to Server (instead of using Root User)
 
 ##  Artifact Repository Manager with Nexus 
 
 https://gitlab.com/nanuchi/java-app
+
 https://gitlab.com/nanuchi/java-maven-app
 
--    What is an Artifact Repository Manager?
--    Install and run Nexus on Cloud Server
--    Different Repository Types (proxy, hosted, etc.) explained
--    Different Repository Formats (maven, docker, npm, etc.) explained
--    Upload Jar File to Nexus (maven and gradle projects)
--    Nexus API and Repository URLs
--    Blob stores
--    Browsing Components - Components vs Assets
--    Cleanup Policies
--    Scheduled Tasks
+- What is an Artifact Repository Manager?
+- Install and run Nexus on Cloud Server
+- Different Repository Types (proxy, hosted, etc.) explained
+- Different Repository Formats (maven, docker, npm, etc.) explained
+- Upload Jar File to Nexus (maven and gradle projects)
+- Nexus API and Repository URLs
+- Blob stores
+- Browsing Components - Components vs Assets
+- Cleanup Policies
+- Scheduled Tasks
 
 ##### Nexus manual installation
 
@@ -120,38 +123,37 @@ netstat -lnpt
 
 https://gitlab.com/nanuchi/developing-with-docker
 
--    What is a Container?
--    Docker Components and architecture explained
--    Docker vs. Virtual Machine
--    Main Docker Commands
--    Debugging a Docker Container
--    Demo Project Overview - Docker in Practice (Nodejs App with MongoDB and MongoExpress UI)
--    Developing with Containers
--    Docker Compose - Running multiple services
--    Dockerfile - Building our own Docker Image
--    Private Docker Repository - Pushing our built Docker Image into a private Registry on AWS
--    Deploy containerized app
--    Docker Volumes - Persist data in Docker
--    Volumes Demo - Configure persistence for our demo project
+- What is a Container?
+- Docker Components and architecture explained
+- Docker vs. Virtual Machine
+- Main Docker Commands
+- Debugging a Docker Container
+- Demo Project Overview - Docker in Practice (Nodejs App with MongoDB and MongoExpress UI)
+- Developing with Containers
+- Docker Compose - Running multiple services
+- Dockerfile - Building our own Docker Image
+- Private Docker Repository - Pushing our built Docker Image into a private Registry on AWS
+- Deploy containerized app
+- Docker Volumes - Persist data in Docker
+- Volumes Demo - Configure persistence for our demo project
 
 HadoLinter for Docker -
 https://github.com/hadolint/hadolint
 
 #### Best practises
-● Best practices for writing Dockerfiles: 
+- Best practices for writing Dockerfiles: 
 https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
-● Docker development best practices: 
+- Docker development best practices: 
 https://docs.docker.com/develop/dev-best-practices/
-● Tips for Caching, reducing Image size, maintainability, reproducibility: 
+- Tips for Caching, reducing Image size, maintainability, reproducibility: 
 https://www.docker.com/blog/intro-guide-to-dockerfile-best-practices/
-
 
 - Docker & Nexus
 
--    Create Docker Images Repository on Nexus
--    Push/Pull Docker Image from/to Nexus Repository Manager
--    Install Nexus with Docker
--    Configure insecure repositories in Docker Engine
+- Create Docker Images Repository on Nexus
+- Push/Pull Docker Image from/to Nexus Repository Manager
+- Install Nexus with Docker
+- Configure insecure repositories in Docker Engine
 
 ##  Build Automation - CI/CD with Jenkins 
 
@@ -162,3 +164,4 @@ https://www.docker.com/blog/intro-guide-to-dockerfile-best-practices/
 `docker volume inspect jenkins_home`
 
 `cat /var/snap/docker/common/var-lib-docker/volumes/jenkins_home/_data/secrets/initialAdminPassword`
+
