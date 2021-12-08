@@ -57,7 +57,19 @@
 
 -    Why Build Tools are relevant for DevOps Engineers?
 
+● Java: maven | gradle
+● JavaScript: npm | yarn | webpack
+● Python: pip 
+● C/C++: conan
+● C#: NuGet
+● Golang: dep
+● Ruby: RubyGems
+
+
 ##  Cloud & Infrastructure as a Service Basics (Digital Ocean)
+
+https://github.com/bbachi/react-nodejs-example
+https://github.com/pmendelski/java-react-example
 
 -    Cloud & Infrastructure as a Service Concepts
 
@@ -70,6 +82,8 @@
 
 ##  Artifact Repository Manager with Nexus 
 
+https://gitlab.com/nanuchi/java-app
+https://gitlab.com/nanuchi/java-maven-app
 
 -    What is an Artifact Repository Manager?
 -    Install and run Nexus on Cloud Server
@@ -82,7 +96,27 @@
 -    Cleanup Policies
 -    Scheduled Tasks
 
+##### Nexus manual installation
+
+apt update
+apt install openjdk-8-jre-headless
+apt install net-tools
+cd /opt
+wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+tar -zxvf latest-unix.tar.gz
+adduser nexus
+chown -R nexus:nexus nexus-3.28.1-01
+chown -R nexus:nexus sonatype-work
+vim nexus-3.28.1-01/bin/nexus.rc
+run_as_user="nexus"
+su - nexus
+/opt/nexus-3.28.1-01/bin/nexus start
+ps aux | grep nexus
+netstat -lnpt
+
 ##  Containers with Docker 
+
+https://gitlab.com/nanuchi/developing-with-docker
 
 -    What is a Container?
 -    Docker Components and architecture explained
@@ -97,6 +131,18 @@
 -    Deploy containerized app
 -    Docker Volumes - Persist data in Docker
 -    Volumes Demo - Configure persistence for our demo project
+
+HadoLinter for Docker -
+https://github.com/hadolint/hadolint
+
+#### Best practises
+● Best practices for writing Dockerfiles: 
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+● Docker development best practices: 
+https://docs.docker.com/develop/dev-best-practices/
+● Tips for Caching, reducing Image size, maintainability, reproducibility: 
+https://www.docker.com/blog/intro-guide-to-dockerfile-best-practices/
+
 
 - Docker & Nexus
 
