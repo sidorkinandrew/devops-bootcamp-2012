@@ -98,6 +98,7 @@ https://gitlab.com/nanuchi/java-maven-app
 
 ##### Nexus manual installation
 
+```
 apt update
 apt install openjdk-8-jre-headless
 apt install net-tools
@@ -113,6 +114,7 @@ su - nexus
 /opt/nexus-3.28.1-01/bin/nexus start
 ps aux | grep nexus
 netstat -lnpt
+```
 
 ##  Containers with Docker 
 
@@ -151,3 +153,12 @@ https://www.docker.com/blog/intro-guide-to-dockerfile-best-practices/
 -    Install Nexus with Docker
 -    Configure insecure repositories in Docker Engine
 
+##  Build Automation - CI/CD with Jenkins 
+
+- Jenkins in a Docker container:
+
+`docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts `
+
+`docker volume inspect jenkins_home`
+
+`cat /var/snap/docker/common/var-lib-docker/volumes/jenkins_home/_data/secrets/initialAdminPassword`
