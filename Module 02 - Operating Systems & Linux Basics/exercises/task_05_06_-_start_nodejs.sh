@@ -9,18 +9,6 @@ echo ""
 echo "################"
 echo ""
 
-# read user input for log directory
-echo -n "Set log directory location for the application (absolute path): "
-read LOG_DIRECTORY
-if [ -d $LOG_DIRECTORY ]; then
-  echo "$LOG_DIRECTORY already exists"
-else
-  mkdir -p $LOG_DIRECTORY
-  echo "A new directory $LOG_DIRECTORY has been created"
-fi
-export LOG_DIR=$LOG_DIRECTORY
-
-
 # display nodeJS version
 node_version=$(node --version)
 echo "NodeJS version $node_version installed"
