@@ -80,9 +80,6 @@ https://github.com/pmendelski/java-react-example
 
 ##  Artifact Repository Manager with Nexus 
 
-https://gitlab.com/nanuchi/java-app
-
-https://gitlab.com/nanuchi/java-maven-app
 
 - What is an Artifact Repository Manager?
 - Install and run Nexus on Cloud Server
@@ -96,6 +93,7 @@ https://gitlab.com/nanuchi/java-maven-app
 - Scheduled Tasks
 
 #### Nexus manual installation
+
 
 ```
 apt update
@@ -117,7 +115,6 @@ netstat -lnpt
 
 ##  Containers with Docker 
 
-https://gitlab.com/nanuchi/developing-with-docker
 
 - What is a Container?
 - Docker Components and architecture explained
