@@ -254,7 +254,7 @@ echo "here are all configuration files: $config_files"
 
 **Conditions:**
 
-see "setup_config.sh"
+see [setup_config.sh](setup_config.sh)
 
 
 **User input:**
@@ -290,7 +290,7 @@ echo "group $2"
 **Loops:**
 
 
-see "bash_loops.sh"
+see [bash_loops.sh](bash_loops.sh)
 
 
 </details>
@@ -305,10 +305,10 @@ see "bash_loops.sh"
 **Functions:**
 
 
-see score_sum.sh
+see [score_sum.sh](score_sum.sh)
 
 
-see create_file.sh
+see [create_file.sh](create_file.sh)
 
 
 # Invoke with diff params
@@ -321,7 +321,7 @@ create_file myscript.sh true
 # Function with return value
 
 
-see return_value.sh
+see [return_value.sh](return_value.sh)
 
 
 </details>
