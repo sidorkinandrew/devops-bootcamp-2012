@@ -43,7 +43,7 @@
 - Git for DevOps
 #### Database Types
 
-##  Build and Package Manager Tools
+##  Module 04 - Build and Package Manager Tools
 
 - What are Build Tools and Package Managers?
 - How to build an artifact?
@@ -65,20 +65,23 @@ Golang: dep
 Ruby: RubyGems
 ```
 
-##  Cloud & Infrastructure as a Service Basics (Digital Ocean)
+##  Module 05 - Cloud & Infrastructure as a Service Basics
+
 
 https://github.com/bbachi/react-nodejs-example
 
 https://github.com/pmendelski/java-react-example
 
 - Cloud & Infrastructure as a Service Concepts
+
 #### Working with a cloud server:
-- Setup Server on DigitalOcean (Droplet)
+
+- Setup Server on AWS
 - Install Java on Cloud Server
 - Deploy and run an application on Cloud Server
 - Create a Linux User to login to Server (instead of using Root User)
 
-##  Artifact Repository Manager with Nexus 
+##  Module 06 - Artifact Repository Manager with Nexus 
 
 
 - What is an Artifact Repository Manager?
