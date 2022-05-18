@@ -2,21 +2,21 @@
 
 ### 1: Introduction to Git Commits
 
-#### Introduction to Git Commits
+#### 1. Introduction to Git Commits
 
 ```bash
 git commit
 git commit
 ```
 
-#### Branching in Git
+#### 2. Branching in Git
 
 ```bash
 git branch bugFix
 git checkout bugFix
 ```
 
-#### Merging in Git
+#### 3. Merging in Git
 
 ```bash
 git checkout -b bugFix
@@ -26,7 +26,7 @@ git commit
 git merge bugFix
 ```
 
-#### Rebase Introduction
+#### 4. Rebase Introduction
 
 ```bash
 git checkout -b bugFix
@@ -39,19 +39,19 @@ git rebase main
 
 ### 2. Ramping Up
 
-#### Detach yo' HEAD
+#### 1. Detach yo' HEAD
 
 ```bash
 git checkout c4
 ```
 
-#### Relative Refs
+#### 2. Relative Refs
 
 ```bash
 git checkout c3
 ```
 
-#### Relative Refs #2 (~)
+#### 3. Relative Refs #2 (~)
 
 ```bash
 git branch -f bugFix c0
@@ -59,10 +59,69 @@ git branch -f main c6
 git checkout c1
 ```
 
-#### Reversing Changes in Git
+#### 4. Reversing Changes in Git
 
 ```bash
 git reset HEAD^
 git checkout pushed
 git revert pushed
 ```
+
+### 3. Moving Work Around
+
+#### 1: Cherry-pick Intro
+
+```bash
+git cherry-pick c3 c4 c7
+```
+
+#### 2. Interactive Rebase Intro
+
+```bash
+git rebase -i HEAD~4
+# omit c2, c3 -> c5 -> c4
+```
+
+### 4. A Mixed Bag
+
+#### 1. Grabbing Just 1 Commit
+
+```bash
+git rebase -i HEAD~3
+git branch -f main bugFix
+```
+
+#### 2. Juggling Commits
+
+```bash
+git rebase -i HEAD~2  # c3 -> c2
+git commit --amend
+git rebase -i HEAD~2  # c2 -> c3
+git branch -f main bugFix
+```
+
+#### 3.  Juggling Commits #2
+
+```bash
+git checkout main
+git cherry-pick newImage
+git commit --amend
+git cherry-pick caption
+```
+
+#### 4. Git Tags
+
+```bash
+git tag v0 c1
+git tag v1 c2
+git checkout c2
+```
+
+#### 5. Git Describe
+
+```bash
+git describe main
+git describe side
+git describe bugFix
+```
+
