@@ -125,3 +125,42 @@ git describe side
 git describe bugFix
 ```
 
+###  5. Advanced Topics 
+
+#### 1. Rebasing over 9000 times
+
+```bash
+git rebase main bugFix
+git rebase bugFix side
+git rebase side another
+git branch -f main another
+```
+
+#### 2. Multiple Parents
+
+```bash
+git branch bugWork HEAD~^2~
+```
+
+#### 2. Branch Spaghetti
+
+```bash
+# easy way
+git checkout one
+git cherry-pick c4 c3 c2
+git checkout two
+git cherry-pick c5 c4 c3 c2
+git branch -f three c2
+```
+
+```bash
+# hard way
+git rebase -i one # c4 -> c3 -> c2
+git branch -f one main
+git branch -f three c2
+git branch -f main c5
+git rebase -i two # c5 -> c4 -> c3 -> c2
+git branch -f two main
+git branch -f main c5
+```
+
