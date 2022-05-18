@@ -37,7 +37,7 @@ git checkout bugFix
 git rebase main
 ```
 
-### Ramping Up
+### 2. Ramping Up
 
 #### Detach yo' HEAD
 
