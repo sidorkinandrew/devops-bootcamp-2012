@@ -142,7 +142,7 @@ git branch -f main another
 git branch bugWork HEAD~^2~
 ```
 
-#### 2. Branch Spaghetti
+#### 3. Branch Spaghetti
 
 ```bash
 # easy way
@@ -164,3 +164,112 @@ git branch -f two main
 git branch -f main c5
 ```
 
+## Push & Pull -- Git Remotes! 
+
+### Git fetch, pull, push
+
+```bash
+git clone
+git fetch
+git pull # git fetch + git merge
+git pull --rebase  # git fetch + git rebase
+```
+
+### Locked Master
+
+```bash
+# easy way
+git reset --hard origin/main
+git checkout -b feature C2
+git push origin feature
+```
+
+```bash
+# hard way
+git reset HEAD~1
+git branch -f feature c2
+git push origin feature
+git checkout feature
+```
+
+## To Origin And Beyond -- Advanced Git Remotes! 
+
+### Merging feature branches
+
+```bash
+# hard way
+git reset HEAD~1
+git branch -f feature c2
+git push origin feature
+git checkout feature
+```
+
+### Push Main!
+
+```bash
+git fetch
+git rebase origin/main side1
+git rebase side1 side2
+git rebase side2 side3
+git rebase side3 main
+git push
+```
+
+### Merging with remotes
+
+```bash
+git checkout main
+git pull origin main
+git merge side1
+git merge side2
+git merge side3
+git push origin main
+```
+
+### Remote tracking
+
+```bash
+git checkout -b side o/main # git branch -f side main
+git commit
+git pull --rebase
+git push
+```
+
+
+### Git push arguments
+
+```bash
+# git checkout is disabled here
+git push origin main
+git push origin foo
+```
+
+### Git push arguments -- Expanded!
+
+```bash
+git push origin foo:main
+git push origin main^:foo
+```
+
+### Fetch arguments
+
+```bash
+git fetch origin master^:foo
+git fetch origin foo:master
+git checkout foo
+git merge master
+```
+
+### Source of nothing
+
+```bash
+git pull origin :bar
+git push origin :foo
+```
+
+### Pull arguments
+
+```bash
+git pull origin bar:foo
+git pull origin main:side
+```
